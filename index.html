@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>bootstrap</title>
+    <style>
+        body {
+            text-align: right;
+        }
+
+        .btnn {
+            width: 100px;
+            color: black;
+            height: 100px;
+            border-radius: 25%;
+
+        }
+
+        .swiper {
+            width: 600px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <!-- 
+        col = اصعر مقاس
+        col-sm
+        col-md
+        col-lg 
+        col-xl
+        تنسيق العناصر اعلى اسفل
+        align-items-end
+        align-self-center
+        تنسيق العناصر يمين يسار وسط
+        justify-content-center
+        justify-content-between
+
+        تنسيق ازرار
+        btn btn-outline-primary  مطور
+        btn btn-primary
+
+        جروب من الازرار و toolbar
+
+
+        m: margin
+        mr: margin-right
+        ml: margin-left
+        mt
+        mb
+
+        شرائح البيع او كروت العرض للبيع card
+        div.card..
+        img.card-img
+        div.card-body..
+        h1.card-title
+        p.card-text
+     -->
+
+    <div class="container bg-dart">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light  bg-light">
+            <a href="" class="navbar-brand">
+                <img src="img/logo.png" alt="">
+            </a>
+            <a href="#m_nav" data-toggle="collapse" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <div class="collapse navbar-collapse" id="m_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a href="" class="nav-link p-3 text-primary">الرئيسية</a></li>
+                    <li class="nav-item"><a href="" class="nav-link p-3 text-primary ">تسوق</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link p-3 text-primary ">عنا</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle p-3 text-primary " data-toggle="dropdown">تواصل
+                            معنا</a>
+                        <div class="dropdown-menu">
+                            <a href="" class="dropdown-item">فيسبوك</a>
+                            <a href="" class="dropdown-item">تلجرام</a>
+                            <a href="" class="dropdown-item">واتساب</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"> <a href="" class="nav-link p-3 text-primary ">الرئيسية</a></li>
+                    <li class="nav-item"><a href="" class="nav-link p-3 text-primary ">تسوق</a></li>
+                    <li class="nav-item"><a href="" class="nav-link p-3 text-primary ">عنا</a></li>
+                    <li class="nav-item"><a href="" class="nav-link p-3 text-primary ">تواصل معنا</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <br><br><br>
+
+        <div class="row   justify-content-around bg-danger" style="height: 100px;">
+            <div class="col-6 col-md-3 col-lg-2 align-self-top">test1</div>
+            <div class="col-6 col-md-3 col-lg-2 align-self-center">test2</div>
+            <div class="col-6 col-md-3 col-lg-2 align-self-center">test3</div>
+            <div class="col-6 col-md-3 col-lg-2 ">test4</div>
+
+        </div>
+        <h1 class="text-primary">نص1</h1>
+        <h1 class="text-success">نص2</h1>
+        <h1 class="text-danger">نص3</h1>
+        <div class="alert alert-warning"> انذاااااار</div>
+        <div class="alert alert-success"> انذاااااار</div>
+        <div class="alert alert-danger"> انذاااااار</div>
+
+        <div class="btnn btn btn-secondary "> OK</div>
+        <div class="btnn btn btn-outline-primary"> OK</div>
+
+        <br>
+        <div class="btn">
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+        </div>
+        <br>
+        <hr>
+
+        <div class="btn-group btn-group-lg">
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+        </div>
+
+        <br>
+        <hr>
+        <div class="btn-group btn-group">
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="btn-group btn-group-sm">
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+            <div class="btn btn-primary">OKAY</div>
+        </div>
+
+        <br>
+        <hr>
+
+        <!-- toolbar -->
+        <div class="toolbar">
+
+            <div class="btn-group">
+                <div class="btn btn-primary">OKAY</div>
+                <div class="btn btn-primary">OKAY</div>
+                <div class="btn btn-primary">OKAY</div>
+                <div class="btn btn-primary">OKAY</div>
+                <div class="btn btn-primary">OKAY</div>
+            </div>
+            <br>
+            <div class="btn-group">
+                <div class="btn btn-primary ml-5 mt-5 rounded-circle">OK</div>
+                <div class="btn btn-primary">OKAY</div>
+                <div class="btn btn-primary">OKAY</div>
+                <div class="btn btn-primary">OKAY</div>
+                <div class="btn btn-primary">OKAY</div>
+            </div>
+
+        </div>
+        <br>
+        <hr>
+
+        <div class="row bg-dark">
+            <div class="col-8">
+                <div class="btn btn-primary">OK</div>
+            </div>
+            <div class="col-0 ml-1">
+                <div class="btn btn-primary">OK</div>
+            </div>
+            <div class="col-2">
+                <div class="btn btn-primary">OK</div>
+            </div>
+        </div>
+        <br>
+        <div class="row bg-primary">
+            <div class="col-12 text-center">
+                <div class="btn rounded-circle btn-dark">ZAYED</div>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="row m-1 p-1 ">
+            <div class="card w-25">
+                <img class="card-img" src="img/1.jpg" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">عربة شراء</h1>
+                    <p class="card-text">
+                        هذه العربة مميزة جدا
+                        يمكنك الحصول عليها والاستفادة منها في السوق
+                        سارع قبل انتهاء العرض
+                    </p>
+                    <div class="btn btn-primary">شراء</div>
+                    <div class="badge badge-primary">حجز</div>
+                    <a href="" class="badge badge-success">عرض</a>
+
+                </div>
+
+            </div>
+            <div class="card w-25">
+                <img src="img/1.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h1 class="card-title">عربة شرااء</h1>
+                    <p class="card-text">
+
+                        هذه العربة مميزة جدا
+                        يمكنك الحصول عليها والاستفادة منها في السوق
+                        سارع قبل انتهاء العرض
+                    </p>
+                    <div class="btn btn-primary">شراء</div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- صور متحركة عرض شرائح -->
+
+        <div id="slide" class="carousel slide w-50 ">
+            <!-- الشريط السفلي ..يمكن حذفه -->
+            <ol class="carousel-indicators">
+                <li data-target="#slide" data-slide-to="0" class="active"></li>
+                <li data-target="#slide" data-slide-to="1"></li>
+                <li data-target="#slide" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item  w-50">
+                    <img src="img/5.jpg" alt="">
+                </div>
+                <div class="carousel-item  w-50">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="carousel-item active w-50">
+                    <img src="img/4.jpg" alt="">
+                </div>
+            </div>
+            <!-- ازرار التنقل بين الصور الجانبية -->
+            <a href="#slide" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a href="#slide" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+        </div>
+
+        <br><br>
+        <!-- <div class="dropdown" >
+            <div class="btn btn-primary dropdown-toggle" id="drop" data-toggle="dropdown">قائمة منسدلة</div>
+            <div class="dropdown-menu" aria-labelledby="drop">
+                <a href="#" class="dropdown-item">الخيار الاول</a>
+                <a href="#" class="dropdown-item">الخيار الثاني</a>
+                <a href="#" class="dropdown-item">الخيار الثالث</a>
+            </div>
+
+        </div> -->
+        <!-- another way -->
+        <div class="dropdown">
+            <h2>
+                <div class="badge badge-primary dropdown-toggle" id="drop" data-toggle="dropdown">قائمة منسدلة</div>
+                <div class="dropdown-menu" aria-labelledby="drop">
+                    <a href="#" class="dropdown-item">الخيار الاول</a>
+                    <a href="#" class="dropdown-item">الخيار الثاني</a>
+                    <a href="#" class="dropdown-item">الخيار الثالث</a>
+                </div>
+            </h2>
+
+
+        </div>
+        <br><br>
+
+
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#par">عرض</button>
+        <h2 id="par" class="collapse">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate
+            quibusdam suscipit doloremque enim iste tempora nesciunt, ab quo totam vero sed asperiores dolore repellat
+            error excepturi. Sed, aspernatur at.</h2>
+
+        <br><br>
+        <br><br>
+        <a class="btn btn-primary dropdown-toggle" data-toggle="collapse" href="#par2">عرض</a>
+        <a class="btn btn-primary dropdown-toggle" data-toggle="collapse" href="test2.html">عرض</a>
+        <h2 class="collapse" id="par2">مرحبا</h2>
+
+        <br><br>
+    </div>
+
+    <br><br><br>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper swiper-slide-->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <!--  -->
+            <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-3 swiper-slide">
+                <div class="rounded position-relative fruite-item">
+                    <div class="fruite-img" style="height: 220px;">
+                        <img src="img/3.jpg" class="img-fluid w-100 rounded-top"
+                            style="width: 100%;" alt="">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px;">new</div>
+                    <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4> كرفتة </h4>
+                        <p> كرفتة</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$20 </p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> إضافة إلى السلة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-3 swiper-slide">
+                <div class="rounded position-relative fruite-item">
+                    <div class="fruite-img" style="height: 220px;">
+                        <img src="img/3.jpg" class="img-fluid w-100 rounded-top"
+                            style="width: 100%;" alt="">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px;">new</div>
+                    <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4> كوت قطيفة </h4>
+                        <p> كوت قطيفة</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$70 </p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> إضافة إلى السلة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-3 swiper-slide">
+                <div class="rounded position-relative fruite-item">
+                    <div class="fruite-img" style="height: 220px;">
+                        <img src="img/3.jpg" class="img-fluid w-100 rounded-top"
+                            style="width: 100%;" alt="">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px;">new</div>
+                    <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4> قبعة شبابي </h4>
+                        <p> قبعة شبابي</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$15 </p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> إضافة إلى السلة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-3 swiper-slide">
+                <div class="rounded position-relative fruite-item">
+                    <div class="fruite-img" style="height: 220px;">
+                        <img src="img/3.jpg" class="img-fluid w-100 rounded-top"
+                            style="width: 100%;" alt="">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px;">new</div>
+                    <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4> بنطلون شبابي </h4>
+                        <p> بنطلون شبابي جينز</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$55 </p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> إضافة إلى السلة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-sm-6 col-md-4 col-lg-3 col-xl-3 swiper-slide">
+                <div class="rounded position-relative fruite-item">
+                    <div class="fruite-img" style="height: 220px;">
+                        <img src="img/3.jpg" class="img-fluid w-100 rounded-top"
+                            style="width: 100%;" alt="">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px;">new</div>
+                    <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4> فنيلة ولادي </h4>
+                        <p> شميز طويل الأكمام لون بيج تركي</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$10 </p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> إضافة إلى السلة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative fruite-item">
+                    <div class="fruite-img">
+                        <img src="img/photos/1/mjns.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">جديد</div>
+                    <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>بنطلون تركي شبابي</h4>
+                        <p>معلومات .. شرح.. توضيح عن المنتج</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$4.99 </p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> إضافة إلى اللة</a>
+                        </div>
+                    </div>
+                </div>
+               </div> -->
+            <!--  -->
+
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+    <br><br><br>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>
